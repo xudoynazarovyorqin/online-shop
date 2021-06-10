@@ -8,7 +8,7 @@
                 <img class="card-img-top" src="/storage/images/{{$product->image}}" >
                     <div class="card-body">
                         <h5 class="card-title " style="height: 5vh">{{$product->name}}</h5>
-                        <p class="card-text">Narxi: {{$product->cost}}$</p>
+                        <p class="card-text pt-4 color-grey">Narxi: {{$product->cost}}$</p>
                             
                                 @if($product->role == '0')
                                 <form action="{{route('add-basket',$product->id)}}" method="post">

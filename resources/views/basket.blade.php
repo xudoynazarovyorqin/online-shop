@@ -1,7 +1,10 @@
 @extends('welcome')
 @section('content')
-<div class="pt-4"></div>
-
+<div class="p-4">
+<form action="{{route('products')}}" method="get">
+  <button type="submit" class="btn btn-primary">Ortga</button>
+</form>
+</div>
 <h3>Sizning xaridinggiz:</h3>
 <ul>
 @foreach($products as $product)
