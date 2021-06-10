@@ -28,6 +28,15 @@ class HomeController extends Controller
         return redirect()->route('products');
 
     }
+    public function removeBasket(Request $request,$id)
+    {
+        // dd($request);
+        Product::find($id)->update([
+            'role'=> '0',
+        ]);
+        return redirect()->route('products');
+
+    }
     public function basket()
     {
         $products = Product::where('role', '1')->get();

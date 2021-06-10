@@ -16,10 +16,11 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+        return redirect()->route('products');
 });
 
 Route::get('/products', [App\Http\Controllers\HomeController::class , 'product'])->name('products');
 Route::get('/basket', [App\Http\Controllers\HomeController::class , 'basket'])->name('basket');
 Route::post('/search', [App\Http\Controllers\HomeController::class , 'search'])->name('search');
 Route::post('/add-basket/{id}', [App\Http\Controllers\HomeController::class , 'addBasket'])->name('add-basket');
+Route::post('/remove-basket/{id}', [App\Http\Controllers\HomeController::class , 'removeBasket'])->name('remove-basket');

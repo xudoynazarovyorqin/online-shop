@@ -20,40 +20,36 @@
 <!-- <div class="container mt-3 "> -->
 
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2 bg-dark elevation-4 " style="height: 100vh;">
             <div class="sidebar">
    
                 <div class="form-inline">
-        
-      
-
-     
-                                            <nav class="mt-2  ">
-                                                <ul class="nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
-                                                
-                                                <li class="nav-item ">
-                                                    <a href="/products" class="nav-link ">
-                                                    <p>
-                                                        Home
-                                                    </p>
-                                                    </a>
-                                                    <ul class="nav-item ">
-                                                    <li class="nav-item">
-                                                        <a href="/teachers" class="nav-link ">
-                                                        <p>Teachers</p>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="./subjects" class="nav-link">
-                                                        <p>Subjects</p>
-                                                        </a>
-                                                    </li>
-                                                   
-                                                    </ul>
-                                                </li>
-                                               
-                                                </ul>
-                                            </nav>
+                        <nav class="mt-2  ">
+                            <ul class="nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
+                            
+                            <li class="nav-item ">
+                                <a href="/products" class="nav-link ">
+                                <p>
+                                    Home
+                                </p>
+                                </a>
+                                <ul class="nav-item ">
+                                <li class="nav-item">
+                                    <a href="/teachers" class="nav-link ">
+                                    <p>Teachers</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./subjects" class="nav-link">
+                                    <p>Subjects</p>
+                                    </a>
+                                </li>
+                                
+                                </ul>
+                            </li>
+                            
+                            </ul>
+                        </nav>
                 </div>
             </div>
         </div>
@@ -64,7 +60,7 @@
             <form action="{{route('search')}}" method="post">
             @csrf
                 <div class="input-group">
-                    <input type="text" name="search" class="form-control" placeholder="Search this blog">
+                    <input type="text" name="search" class="form-control" placeholder="Qidirish">
                     <div class="input-group-append">
                         <button class="btn btn-secondary" type="submit">
                             <i class="fa fa-search"></i>
